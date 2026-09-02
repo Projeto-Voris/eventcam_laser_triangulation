@@ -1,0 +1,7 @@
+# ninja log v5
+2	10423	1788296609420663833	CMakeFiles/triangulacao.dir/control_triangulacao.cpp.o	fca7207b893a99c8
+10423	11187	1788296610188654947	triangulacao	82f3a2d946540ec
+0	7572	1788295550450578561	CMakeFiles/triangulacao.dir/triangulacao.cpp.o	8494b6fc7bf10e46
+1	7422	1788295550294593479	CMakeFiles/triangulacao.dir/event_camera.cpp.o	5d7af7c26d209e6b
+1	5315	1788295548190792803	CMakeFiles/triangulacao.dir/conv_camera.cpp.o	552ca699c57462e1
+1	3270	1788295546146983327	CMakeFiles/triangulacao.dir/control_hardware.cpp.o	44236f126dc42ad3
