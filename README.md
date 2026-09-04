@@ -3,6 +3,7 @@
 ### Moacir Wendhausen  
 **Data:** 01/07/2026  
 
+REMOVE ME
 ---
 
 ## 💻 Ambiente de Desenvolvimento e Hardware
