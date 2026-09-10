@@ -3,9 +3,13 @@ cmake_minimum_required(VERSION 3.5)
 
 project(triangualcao_laser_event_cam)
 
-# Versão release ou Debug do Cmake:
-#set(CMAKE_BUILD_TYPE Release)
-set(CMAKE_BUILD_TYPE Debug)
+# Build com Release, a menos que seja executado manualmente no modo Debug:
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build" FORCE)
+  message(STATUS "BUILD NO MODO 'Release'!!! Pois o modo 'Debug' não foi especificado.")
+else()
+  message(STATUS "BUILD NO MODO 'Debug'!!!")
+endif()
 
 
 
