@@ -73,7 +73,7 @@
 
       {
          "name": "periodo_pwm_A",
-         "value": 10000000
+         "value": 100000000
       },
 
       {

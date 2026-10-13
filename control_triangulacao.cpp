@@ -384,6 +384,19 @@ int ControlTriangulacao::configuraGPIO_Jetson(){
     // Através desses endereços que os pinos de IO são diretamente manipulados, por exemplo, mudanças de nivel lógico.
     gpios_actives= configura_Jetson.configura_GPIO_Jetson(&chip);
 
+    // Ajusta o periodo PWM do canal A:
+    if (pwm_A.setPeriodo(parametros_gerais.periodo_PWM_A))
+        std::cout << "PWM_A configurado com periodo: " << parametros_gerais.periodo_PWM_A << "ns" << std::endl;
+    else
+        std::cout << "[ERRO] Falha ao configurar PWM_A." << std::endl;
+
+    // Ajusta o periodo PWM do canal B:    
+    if (pwm_B.setPeriodo(parametros_gerais.periodo_PWM_B))
+        std::cout << "PWM_B configurado com periodo: " << parametros_gerais.periodo_PWM_B << "ns" << std::endl;
+    else
+        std::cout << "[ERRO] Falha ao configurar PWM_B." << std::endl;
+
+
     // Por segurança, verifica se as linhas "gpios_actives" foram ativadas, configuradas ok, caso contrario o programa é abortado para evitar falhas de hardware:
     if (gpios_actives.triggerEventCam == nullptr || gpios_actives.piscaLed == nullptr || gpios_actives.triggerNormalCam == nullptr || 
         gpios_actives.controlMotor_Pulso == nullptr  || gpios_actives.controlMotor_Dir == nullptr ) {

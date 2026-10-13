@@ -66,9 +66,9 @@ struct PARAMETROS_GERAIS {
 
     // Definição do periodo dos PWMs, que define a frquencia dos pulsos PWM.
     // ATENÇÂO!!!! valor definido em nano segundos.
-    long periodo_PWM_A      = 10000000;     // A: referente ao blink do led (pino 32 da Jetson). 
+    int periodo_PWM_A      = 10000000;     // A: referente ao blink do led (pino 32 da Jetson). 
     //long periodo_PWM_B      = 1000000;    // B: referente a tensão do led (pino 33 da Jetson).     
-    long periodo_PWM_B      = 500000;       // B: referente a tensão do led (pino 33 da Jetson). 
+    int periodo_PWM_B      = 500000;       // B: referente a tensão do led (pino 33 da Jetson). 
 
     // Define se está usando o led de potencia LT2PR da Opto Engineering
     bool useLed_LT2PR       = false;
